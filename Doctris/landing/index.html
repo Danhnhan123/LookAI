@@ -115,7 +115,22 @@
             justify-content: center;
         }
     </style>
+  <style> 
+/* Giữ khung ảnh stylist đồng đều */
+.team-img img {
+  width: 100%;              /* chiếm toàn khung */
+  height: 350px;            /* chiều cao cố định (tùy chỉnh theo thiết kế) */
+  object-fit: cover;         /* cắt ảnh cho vừa khung mà không méo */
+  object-position: center;   /* canh giữa ảnh */
+  transition: transform 0.3s ease;
+}
 
+/* Hiệu ứng hover nhẹ (tuỳ chọn) */
+.team-img:hover img {
+  transform: scale(1.05);
+}
+
+        </style> 
 </head>
 
 <body>
@@ -323,7 +338,8 @@
     <!-- Navbar End -->
 
     <!-- Start Hero -->
-    <section class="bg-half-260 d-table w-100" style="background: url('') center;">
+<section class="bg-half-260 d-table w-100"
+    style="background: url('../assets/images/client/OIP.webp') center/cover no-repeat;">
         <div class="bg-overlay bg-overlay-dark"></div>
         <div class="container">
             <div class="row mt-5 mt-lg-0">
@@ -755,7 +771,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
                     <div class="card team border-0 rounded shadow overflow-hidden">
                         <div class="team-img position-relative">
-                            <img src="../assets/images/doctors/01.jpg" class="img-fluid" alt="">
+                            <img src="../assets/images/Stylist/6.webp" class="img-fluid" alt="">
                             <ul class="list-unstyled team-social mb-0">
                                 <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
                                 <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
@@ -773,7 +789,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
                     <div class="card team border-0 rounded shadow overflow-hidden">
                         <div class="team-img position-relative">
-                            <img src="../assets/images/outfit/4.webp" class="img-fluid" alt="">
+                            <img src="../assets/images/Stylist/3.webp" class="img-fluid" alt="">
                             <ul class="list-unstyled team-social mb-0">
                                 <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
                                 <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
@@ -791,7 +807,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
                     <div class="card team border-0 rounded shadow overflow-hidden">
                         <div class="team-img position-relative">
-                            <img src="../assets/images/outfit/3.webp" class="img-fluid" alt="">
+                            <img src="../assets/images/Stylist/5.webp" class="img-fluid" alt="">
                             <ul class="list-unstyled team-social mb-0">
                                 <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
                                 <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
@@ -809,7 +825,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
                     <div class="card team border-0 rounded shadow overflow-hidden">
                         <div class="team-img position-relative">
-                            <img src="../assets/images/outfit/2.webp" class="img-fluid" alt="">
+                            <img src="../assets/images/Stylist/7.webp" class="img-fluid" alt="">
                             <ul class="list-unstyled team-social mb-0">
                                 <li><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
                                 <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
@@ -1012,7 +1028,7 @@
             <div class="modal-content">
                 <div class="modal-body p-0">
                     <video controls autoplay loop style="width:100%;">
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        <source src="" type="video/mp4">
                     </video>
                 </div>
             </div>

@@ -68,7 +68,17 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             margin-bottom: 20px;
         }
+        /* Ảnh stylist - căn đều, không méo */
+.stylist-card img {
+    width: 100%;
+    height: 320px;          /* chiều cao cố định cho tất cả */
+    object-fit: cover;      /* giúp ảnh cắt vừa khung, không méo */
+    object-position: center;/* canh giữa ảnh */
+    display: block;
+}
+
     </style>
+    
 </head>
 <body>
     <div id="preloader">
@@ -128,7 +138,7 @@
                 
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card stylist-card">
-                        <img src="../assets/images/doctors/01.jpg" class="card-img-top" alt="Stylist">
+                        <img src="../assets/images/Stylist/1.webp" class="card-img-top" alt="Stylist">
                         <div class="card-body text-center">
                             <h6 class="card-title">Minh Châu</h6>
                             <p class="text-muted small">Chuyên gia tóc & makeup</p>
@@ -149,7 +159,7 @@
 
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card stylist-card">
-                        <img src="../assets/images/doctors/02.jpg" class="card-img-top" alt="Stylist">
+                        <img src="../assets/images/Stylist/2.webp" class="card-img-top" alt="Stylist">
                         <div class="card-body text-center">
                             <h6 class="card-title">Thanh Hằng</h6>
                             <p class="text-muted small">Stylist thời trang</p>
@@ -170,7 +180,7 @@
 
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card stylist-card">
-                        <img src="../assets/images/doctors/03.jpg" class="card-img-top" alt="Stylist">
+                        <img src="../assets/images/Stylist/3.webp" class="card-img-top" alt="Stylist">
                         <div class="card-body text-center">
                             <h6 class="card-title">Quỳnh Anh</h6>
                             <p class="text-muted small">Chuyên gia skincare</p>
@@ -191,7 +201,7 @@
 
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card stylist-card">
-                        <img src="../assets/images/doctors/04.jpg" class="card-img-top" alt="Stylist">
+                        <img src="../assets/images/Stylist/4.webp" class="card-img-top" alt="Stylist">
                         <div class="card-body text-center">
                             <h6 class="card-title">Hương Giang</h6>
                             <p class="text-muted small">Nail art specialist</p>
@@ -217,7 +227,7 @@
                     <div class="chat-container shadow">
                         <div class="chat-header">
                             <div class="d-flex align-items-center">
-                                <img src="../assets/images/doctors/01.jpg" class="rounded-circle me-3" width="40" height="40" alt="Stylist">
+                                <img src="../assets/images/Stylist/1.webp" class="rounded-circle me-3" width="40" height="40" alt="Stylist">
                                 <div>
                                     <h6 class="mb-0" id="currentStylist">Minh Châu</h6>
                                     <small class="opacity-75">Chuyên gia tóc & makeup</small>
